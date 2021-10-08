@@ -19,3 +19,8 @@ input, select {
   padding: 1em;
   margin: .5em
 }
+
+th {
+  text-align: left;
+  min-width: 5vw
+}

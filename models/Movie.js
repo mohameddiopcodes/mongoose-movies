@@ -4,7 +4,12 @@ const Schema = mongoose.Schema;
 
 const movieSchema = new Schema({
     title: String,
-    releaseYear: Number,
+    releaseYear: {
+        type: Number,
+        default: function() {
+            return new Date().getFullYear()
+        }
+    },
     mpaaRating: String,
     cast: [String],
     nowShowing: Boolean
