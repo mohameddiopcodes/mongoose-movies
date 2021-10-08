@@ -1,8 +1,21 @@
 body {
+  width: 30vw;
+  margin: 0 auto;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  min-height: 2em;
+  padding: 1em;
+  margin: .5em
 }
